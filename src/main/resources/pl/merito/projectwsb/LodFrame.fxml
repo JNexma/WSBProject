@@ -11,71 +11,70 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="602.0" style="-fx-background-color: #bce4fa;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.merito.projectwsb.LodController">
     <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="142.0" layoutX="-1.0" layoutY="259.0" stroke="BLACK" strokeType="INSIDE" width="302.0" />
-        <Label layoutX="14.0" layoutY="31.0" prefHeight="30.0" prefWidth="116.0" text="Full name" textFill="#22284f" />
-        <Label layoutX="14.0" layoutY="61.0" prefHeight="30.0" prefWidth="116.0" text="Date of Birth" textFill="#22284f" />
-        <Label layoutX="14.0" layoutY="91.0" prefHeight="30.0" prefWidth="116.0" text="Passport Number" textFill="#22284f" />
-        <Label layoutX="14.0" layoutY="121.0" prefHeight="30.0" prefWidth="116.0" text="Country" textFill="#22284f" />
-        <Label layoutX="14.0" layoutY="151.0" prefHeight="30.0" prefWidth="116.0" text="City" textFill="#22284f" />
-        <Label layoutX="14.0" layoutY="181.0" prefHeight="30.0" prefWidth="116.0" text="ID Number" textFill="#22284f" />
-        <Label layoutX="14.0" layoutY="217.0" prefHeight="30.0" prefWidth="116.0" text="Current Date" textFill="#22284f" />
-        <TextField fx:id="fullName_input" layoutX="130.0" layoutY="30.0" onKeyPressed="#nextTextField" promptText="Name Surname" />
-        <TextField fx:id="dateOfBirth_input" layoutX="130.0" layoutY="60.0" onKeyPressed="#nextTextField" promptText="dd.mm.yyyy" />
-        <TextField fx:id="passport_input" layoutX="130.0" layoutY="90.0" onKeyPressed="#nextTextField" promptText="A000000" />
-        <TextField fx:id="country_input" layoutX="130.0" layoutY="120.0" onKeyPressed="#nextTextField" promptText="Country" />
-        <TextField fx:id="city_input" layoutX="130.0" layoutY="150.0" onKeyPressed="#nextTextField" promptText="City" />
-        <TextField fx:id="idNumber_input" layoutX="130.0" layoutY="180.0" onKeyPressed="#nextTextField" promptText="000" />
-        <TextField fx:id="currentDate_input" layoutX="130.0" layoutY="216.0" onKeyPressed="#nextTextField" promptText="dd.mm.yyyy" />
-        <Label layoutX="318.0" layoutY="90.0" prefHeight="30.0" prefWidth="124.0" text="Amount of Payment" textFill="#22284f" />
-        <Label layoutX="318.0" layoutY="120.0" prefHeight="30.0" prefWidth="107.0" text="Date of Payment" textFill="#22284f" />
-        <ChoiceBox fx:id="paymentCurrency_input" layoutX="438.0" layoutY="152.0" prefHeight="26.0" prefWidth="150.0" />
-        <Label layoutX="318.0" layoutY="150.0" prefHeight="30.0" prefWidth="107.0" text="Payment Currency" textFill="#22284f" />
-        <TextField fx:id="amountOfPayment_input" layoutX="437.0" layoutY="93.0" onKeyPressed="#nextTextField" promptText="0" />
-        <TextField fx:id="dateOfPayment_input" layoutX="438.0" layoutY="122.0" onKeyPressed="#nextTextField" promptText="dd.mm.yyyy" />
-        <Label layoutX="318.0" layoutY="210.0" prefHeight="30.0" prefWidth="107.0" text="Faculty" textFill="#22284f" />
-        <Label layoutX="318.0" layoutY="240.0" prefHeight="30.0" prefWidth="116.0" text="Speciality" textFill="#22284f" />
-        <Label layoutX="318.0" layoutY="272.0" prefHeight="30.0" prefWidth="116.0" text="Degree" textFill="#22284f" />
-        <Label layoutX="318.0" layoutY="302.0" prefHeight="30.0" prefWidth="116.0" text="Intake" textFill="#22284f" />
-        <Label layoutX="318.0" layoutY="332.0" prefHeight="30.0" prefWidth="116.0" text="Type of Study" textFill="#22284f" />
-        <Label layoutX="318.0" layoutY="362.0" opacity="0.5" prefHeight="30.0" prefWidth="137.0" text="Language (soon)" textFill="#22284f" />
-        <ChoiceBox fx:id="language_input" disable="true" layoutX="436.0" layoutY="364.0" prefHeight="26.0" prefWidth="150.0" />
-        <TextField fx:id="speciality_input" layoutX="437.0" layoutY="242.0" onKeyPressed="#nextTextField" promptText="Speciality" />
-        <TextField fx:id="faculty_input" layoutX="437.0" layoutY="209.0" onKeyPressed="#nextTextField" promptText="Faculty" />
-        <ChoiceBox fx:id="typeOfStudy_input" layoutX="438.0" layoutY="334.0" prefHeight="26.0" prefWidth="150.0" />
-        <ChoiceBox fx:id="intake_input" layoutX="438.0" layoutY="304.0" prefHeight="26.0" prefWidth="150.0" />
-        <Button fx:id="docGenerationBt" layoutX="13.0" layoutY="416.0" mnemonicParsing="false" onAction="#documentsGeneration" prefHeight="30.0" prefWidth="138.0" text="Generate Documents" />
-        <ChoiceBox fx:id="degree_input" layoutX="438.0" layoutY="274.0" prefHeight="26.0" prefWidth="150.0" />
-        <MenuBar layoutY="1.0" prefHeight="1.0" prefWidth="600.0">
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#22284f" height="360.0" layoutX="22.0" layoutY="65.0" stroke="#22284f" strokeType="INSIDE" width="559.0" />
+        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="220.0" layoutX="313.0" layoutY="38.0" stroke="WHITE" strokeType="INSIDE" width="286.0" />
+        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="163.0" layoutX="3.0" layoutY="283.0" stroke="WHITE" strokeType="INSIDE" width="286.0" />
+        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="192.0" layoutX="3.0" layoutY="38.0" stroke="WHITE" strokeType="INSIDE" width="286.0" />
+        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="142.0" layoutX="313.0" layoutY="307.0" stroke="WHITE" strokeType="INSIDE" width="286.0" />
+        <Label layoutX="13.0" layoutY="47.0" prefHeight="30.0" prefWidth="116.0" text="Full name" textFill="#22284f" />
+        <Label layoutX="13.0" layoutY="77.0" prefHeight="30.0" prefWidth="116.0" text="Date of Birth" textFill="#22284f" />
+        <Label layoutX="13.0" layoutY="107.0" prefHeight="30.0" prefWidth="116.0" text="Passport Number" textFill="#22284f" />
+        <Label layoutX="13.0" layoutY="137.0" prefHeight="30.0" prefWidth="116.0" text="Country" textFill="#22284f" />
+        <Label layoutX="13.0" layoutY="167.0" prefHeight="30.0" prefWidth="116.0" text="City" textFill="#22284f" />
+        <Label layoutX="13.0" layoutY="197.0" prefHeight="30.0" prefWidth="116.0" text="Annotation" textFill="#22284f" />
+        <TextField fx:id="fullName_input" layoutX="129.0" layoutY="47.0" onKeyPressed="#nextTextField" promptText="Name Surname" />
+        <TextField fx:id="dateOfBirth_input" layoutX="129.0" layoutY="77.0" onKeyPressed="#nextTextField" promptText="dd.mm.yyyy" />
+        <TextField fx:id="passport_input" layoutX="129.0" layoutY="107.0" onKeyPressed="#nextTextField" promptText="A000000" />
+        <TextField fx:id="country_input" layoutX="129.0" layoutY="137.0" onKeyPressed="#nextTextField" promptText="Country" />
+        <TextField fx:id="city_input" layoutX="129.0" layoutY="167.0" onKeyPressed="#nextTextField" promptText="City" />
+        <TextField fx:id="idNumber_input" layoutX="129.0" layoutY="197.0" onKeyPressed="#nextTextField" promptText="000" />
+        <Label layoutX="11.0" layoutY="350.0" prefHeight="30.0" prefWidth="124.0" text="Tuition Paid/Date" textFill="#22284f" />
+        <ChoiceBox fx:id="paymentCurrency_input" layoutX="129.0" layoutY="410.0" prefHeight="26.0" prefWidth="150.0" />
+        <Label layoutX="11.0" layoutY="410.0" prefHeight="30.0" prefWidth="107.0" text="Payment Currency" textFill="#22284f" />
+        <TextField fx:id="tuitionPay_input" layoutX="129.0" layoutY="350.0" onKeyPressed="#nextTextField" prefHeight="26.0" prefWidth="58.0" promptText="0" />
+        <TextField fx:id="tuitionDate_input" layoutX="191.0" layoutY="350.0" onKeyPressed="#nextTextField" prefHeight="26.0" prefWidth="88.0" promptText="dd.mm.yyyy" />
+        <Label layoutX="321.0" layoutY="44.0" prefHeight="30.0" prefWidth="107.0" text="Faculty" textFill="#22284f" />
+        <Label layoutX="321.0" layoutY="74.0" prefHeight="30.0" prefWidth="116.0" text="Speciality" textFill="#22284f" />
+        <Label layoutX="321.0" layoutY="104.0" prefHeight="30.0" prefWidth="116.0" text="Degree" textFill="#22284f" />
+        <Label layoutX="321.0" layoutY="134.0" prefHeight="30.0" prefWidth="116.0" text="Intake" textFill="#22284f" />
+        <Label layoutX="321.0" layoutY="164.0" prefHeight="30.0" prefWidth="116.0" text="Type of Study" textFill="#22284f" />
+        <Label layoutX="321.0" layoutY="194.0" prefHeight="30.0" prefWidth="137.0" text="Language" textFill="#22284f" />
+        <ChoiceBox fx:id="language_input" layoutX="440.0" layoutY="194.0" prefHeight="26.0" prefWidth="150.0" />
+        <TextField fx:id="speciality_input" layoutX="440.0" layoutY="74.0" onKeyPressed="#nextTextField" promptText="Speciality" />
+        <TextField fx:id="faculty_input" layoutX="440.0" layoutY="44.0" onKeyPressed="#nextTextField" promptText="Faculty" />
+        <ChoiceBox fx:id="typeOfStudy_input" layoutX="440.0" layoutY="164.0" prefHeight="26.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="intake_input" layoutX="440.0" layoutY="134.0" prefHeight="26.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="degree_input" layoutX="440.0" layoutY="104.0" prefHeight="26.0" prefWidth="150.0" />
+        <MenuBar layoutX="5.0" layoutY="1.0" prefHeight="26.0" prefWidth="587.0" style="-fx-background-radius: 10;">
             <menus>
-                <Menu mnemonicParsing="false" text="Select Country">
+                <Menu mnemonicParsing="false" text="Options">
                     <items>
-                        <MenuItem fx:id="torunSelected" mnemonicParsing="false" onAction="#citySwitcher" text="Toruń " />
-                        <MenuItem fx:id="bydgoszczSelected" mnemonicParsing="false" onAction="#citySwitcher" text="Bydgoszcz" />
-                        <MenuItem fx:id="lodzSelected" mnemonicParsing="false" onAction="#citySwitcher" text="Łódź (selected)" />
+                        <MenuItem fx:id="toMainBtn" mnemonicParsing="false" onAction="#citySwitcher" text="Change city" />
+                        <MenuItem fx:id="clearFieldsBtn" mnemonicParsing="false" onAction="#clearFields" text="Clear fields" />
                     </items>
                 </Menu>
             </menus>
         </MenuBar>
-        <Label layoutX="318.0" layoutY="31.0" prefHeight="30.0" prefWidth="107.0" text="Tution Price" textFill="#22284f" />
-        <TextField fx:id="tuition_input" layoutX="437.0" layoutY="33.0" onKeyPressed="#nextTextField" promptText="0" />
-        <Label layoutX="318.0" layoutY="61.0" prefHeight="30.0" prefWidth="107.0" text="Installments" textFill="#22284f" />
-        <TextField fx:id="installments_input" layoutX="437.0" layoutY="63.0" onKeyPressed="#nextTextField" promptText="0" />
-        <Label layoutX="318.0" layoutY="390.0" prefHeight="30.0" prefWidth="107.0" text="Interview" textFill="#22284f" />
-        <CheckBox fx:id="interview_yes_input" layoutX="436.0" layoutY="397.0" mnemonicParsing="false" onAction="#setInterviewYes" text="Yes" />
-        <CheckBox fx:id="interview_no_input" layoutX="546.0" layoutY="397.0" mnemonicParsing="false" onAction="#setInterviewNo" selected="true" text="No" />
-        <ImageView fx:id="frameLogo" fitHeight="142.0" fitWidth="306.0" layoutX="12.0" layoutY="259.0" onMouseClicked="#rotateImage" pickOnBounds="true" preserveRatio="true">
+        <Label layoutX="11.0" layoutY="290.0" prefHeight="30.0" prefWidth="107.0" text="Tution Price" textFill="#22284f" />
+        <TextField fx:id="tuition_input" layoutX="129.0" layoutY="290.0" onKeyPressed="#nextTextField" prefHeight="26.0" prefWidth="150.0" promptText="0" />
+        <Label layoutX="11.0" layoutY="320.0" prefHeight="30.0" prefWidth="107.0" text="Installments" textFill="#22284f" />
+        <Label fx:id="labelInterview" layoutX="321.0" layoutY="224.0" prefHeight="30.0" prefWidth="107.0" text="Choose language..." textFill="#22284f" />
+        <CheckBox fx:id="interview_yes_input" disable="true" layoutX="440.0" layoutY="232.4" mnemonicParsing="false" onAction="#setInterviewYes" opacity="0.0" text="Yes" />
+        <CheckBox fx:id="interview_no_input" disable="true" layoutX="550.0" layoutY="232.4" mnemonicParsing="false" onAction="#setInterviewNo" opacity="0.0" selected="true" text="No" />
+        <ImageView fx:id="frameLogo" fitHeight="142.0" fitWidth="306.0" layoutX="317.0" layoutY="307.0" onMouseClicked="#rotateImage" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../../../../../../../../Desktop/WSB%20Project/logo%20WSB%20Merito/logoWsbLOD.png" />
             </image>
         </ImageView>
-        <Line endX="193.199951171875" layoutX="401.0" layoutY="196.0" startX="-84.39999389648438" />
-        <Line endX="-110.49990844726562" endY="37.20001220703125" layoutX="411.0" layoutY="206.0" startX="-110.49990844726562" startY="-166.79998779296875" />
-        <Line endX="-110.49990844726562" endY="70.60000610351562" layoutX="411.0" layoutY="383.0" startX="-110.49990844726562" startY="29.800018310546875" />
-      <Button fx:id="buttonSwitch" disable="true" layoutX="281.0" layoutY="261.0" mnemonicParsing="false" onAction="#citySwitcherBtn" opacity="0.0" prefHeight="1.0" prefWidth="1.0" />
+        <Button fx:id="docGenerationBt" layoutX="27.0" layoutY="234.0" mnemonicParsing="false" onAction="#documentsGeneration" prefHeight="44.0" prefWidth="237.0" text="Generate Documents" />
+        <Button fx:id="buttonSwitch" disable="true" layoutX="293.0" layoutY="420.0" mnemonicParsing="false" onAction="#citySwitcherBtn" opacity="0.0" prefHeight="1.0" prefWidth="1.0" />
+        <Label layoutX="11.0" layoutY="380.0" prefHeight="30.0" prefWidth="124.0" text="Adm. Paid/Date" textFill="#22284f" />
+        <TextField fx:id="admPay_input" layoutX="129.0" layoutY="380.0" onKeyPressed="#nextTextField" prefHeight="26.0" prefWidth="58.0" promptText="0" />
+        <TextField fx:id="admDate_input" layoutX="191.0" layoutY="380.0" onKeyPressed="#nextTextField" prefHeight="26.0" prefWidth="88.0" promptText="dd.mm.yyyy" />
+        <ChoiceBox fx:id="installments_input" layoutX="129.0" layoutY="320.0" prefHeight="26.0" prefWidth="150.0" />
     </children>
 </AnchorPane>

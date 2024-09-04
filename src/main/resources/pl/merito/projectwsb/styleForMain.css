@@ -1,0 +1,72 @@
+/* Общие стили для приложения */
+.root {
+    -fx-background-color: #f0f0f0; /* Цвет фона */
+}
+
+/* Стили для заголовка окна */
+#titleBar {
+    -fx-background-color: #303F9F; /* Цвет фона */
+    -fx-font-size: 24px; /* Размер шрифта */
+    -fx-text-fill: white; /* Цвет текста */
+    -fx-alignment: center; /* Выравнивание текста по центру */
+}
+
+/* Стили для меток */
+.label {
+    -fx-font-size: 12px; /* Размер шрифта */
+    -fx-text-fill: #333; /* Цвет текста */
+    -fx-font-weight: bold; /* Жирный шрифт */
+}
+
+#labelText{
+    -fx-font-size: 24px; /* Размер шрифта */
+    -fx-text-fill: #ffffff; /* Цвет текста */
+    -fx-font-weight: bold; /* Жирный шрифт */
+    -fx-font-family: "Georgia";
+}
+
+/* Стили для текстовых полей */
+.text-field {
+    -fx-font-size: 12px; /* Размер шрифта */
+}
+
+/* Стили для кнопок */
+.button {
+    -fx-background-color: #E83962; /* Красный цвет фона */
+    -fx-text-fill: white; /* Белый цвет текста */
+    -fx-font-weight: bold; /* Жирный текст */
+}
+
+.button:hover {
+    -fx-background-color: #BB0D5D; /* Измененный цвет кнопки при наведении курсора */
+}
+
+/* Стили для ChoiceBox */
+.choice-box {
+    -fx-font-size: 11px; /* Размер шрифта */
+    -fx-text-fill: #22284f;
+    -fx-background-color: #e4e5eb;
+        -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 5, 5);
+
+}
+
+/* Стили для CheckBox */
+.checkbox {
+    -fx-font-size: 11px; /* Размер шрифта */
+}
+
+/* Стили для ImageView */
+#frameLogo {
+    -fx-effect: dropshadow(three-pass-box, #808080, 10, 0, 0, 0);
+}
+
+/* Стили для главной панели */
+.anchor-pane {
+    -fx-padding: 20px; /* Отступ от краев панели */
+    -fx-background-color: white; /* Цвет фона панели */
+}
+
+Rectangle {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 5, 5);
+}
+

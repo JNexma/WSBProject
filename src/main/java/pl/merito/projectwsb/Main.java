@@ -16,7 +16,8 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("HelloFrame.fxml"));
         Scene scene = new Scene(root, 600, 400);
-        stage.setTitle("Main Frame");
+        scene.getStylesheets().add(getClass().getResource("styleForMain.css").toExternalForm());
+        stage.setTitle("WSB Merito Universities (prod. by Denis Sadovskiy)");
         stage.setResizable(false);
         stage.getIcons().add(wsbIcon);
         stage.setScene(scene);
